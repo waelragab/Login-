@@ -1,0 +1,141 @@
+@font-face {
+    font-family: muliRegular;
+    src: url(fonts/Muli.ttf);
+  }
+  @font-face {
+    font-family: muliBold;
+    src: url(fonts/Muli-Bold.ttf);
+  }
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F8FC;
+    color: #141c2c;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "muliRegular", sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: "muliBold", sans-serif;
+}
+a{
+    color: #2762eb;
+    text-decoration: none;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 3px;
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+} 
+form{
+    border-right: 1px solid #ecf2ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex: 2;
+}
+.btn{
+    background-color: #141c2c;
+    border: 2px solid #141c2c;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+    outline: none;
+}
+.btn-ghost{
+    background-color: transparent;
+    border: 1px solid #DAE1F5;
+    color: #545D7A;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.btn-ghost:hover{
+    background-color: #363638;
+    color: #fff;
+}
+.btn img{
+    margin-right: 5px;
+}
+.form-control{
+    width: 100%;
+    margin-top: 10px;
+}
+.form-control label,.form-control input {
+    display: block;
+    width: 100%;
+}
+.form-control label{
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-control input{
+    height: 40px;
+    font-size: 16px;
+    color: #545D7A;
+    padding: 20px;
+    margin-top: 5px;
+
+}
+.checkbox-container{
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+.checkbox-container a{
+    float: right;
+    padding-top: 3px;
+    color: #306BF3;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+
+}
+.feature{
+   
+}
+.feature i{
+    color: #2762eb;
+    margin: 0 20px;
+    font-size: 18px;
+}
+.feature h3{
+display: inline-block;
+color: #10182F;
+
+}
+.feature p{
+    margin: 0 65px;
+    width: 70%;
+    color: #10182F;
+}
+@media(max-width: 860px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+    }
+}
